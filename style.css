@@ -530,10 +530,9 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	width: 60%;
 }
 
 .main-navigation ul {
@@ -545,6 +544,7 @@ a:active {
 
 .main-navigation li {
 	float: left;
+	padding: 10px;
 	position: relative;
 }
 
@@ -615,6 +615,7 @@ a:active {
 	}
 	.main-navigation ul {
 		display: block;
+		float: right;
 	}
 }
 
@@ -890,3 +891,42 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*Header Style Start From Here*/
+.site-header{
+	transition: all 0s ease 0s, all 0.2s ease 0s, all 0s linear 0s;
+	width: 100%;
+	z-index: 101;
+	background: #fff none repeat scroll 0 0;
+	box-shadow: 0 1px 4px #dfdddd;
+	padding: 9px 0;
+
+}
+.header-content{
+	margin: 0 auto;
+	width: 1080px;
+}
+.site-branding{
+	width: 40%;
+	height: auto;
+	float: left;
+}
+
+.site-title {
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.site-description{
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+}
+
+.fuatured-imageone{
+	width: 100%;
+	height: auto;
+}
+
+/*site-content style from here*/
