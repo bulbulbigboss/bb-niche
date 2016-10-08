@@ -47,7 +47,8 @@ html {
 }
 
 body {
-	margin: 0;
+    margin: 0;
+
 }
 
 article,
@@ -345,7 +346,11 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #fbfbfb none repeat scroll 0 0;
+	font-family: arial,serif;
+	font-size: 16px;
+	margin: 0;
+	overflow-x: hidden;
 }
 
 blockquote:before,
@@ -733,10 +738,34 @@ a:active {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-	margin: 0 0 1.5em;
+	background: #fff;
+	box-shadow: 0 0 3px rgba(1, 1, 1, 0.16);
+	color: #111111;
+	font-size: 14px;
+	width: 70%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.widget h2{
+	background: #fbfbfb;
+	border-bottom: 4px double #ccc;
+	color: #000;
+	font-size: 16px;
+	margin-top: 0;
 }
 
-/* Make sure select elements fit in widgets. */
+.widget ul{
+	margin-left: 0;
+}
+.widget ul li{
+	list-style: circle;
+}
+.widget ul li a{
+	text-decoration: none;
+	text-align: left;
+}
+
+	/* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
 }
@@ -918,6 +947,13 @@ object {
 	padding: 0;
 }
 
+.entry-title{
+	font-size: 30px;
+}
+.entry-title a{
+	text-decoration: none;
+}
+
 .site-description{
 	margin: 0;
 	padding: 0;
@@ -925,8 +961,191 @@ object {
 }
 
 .fuatured-imageone{
+	height: auto;
+	width: 100%;
+	margin-top: 25px;
+}
+
+.fuatured-imageone img{
 	width: 100%;
 	height: auto;
+	background-size: cover;
+}
+
+
+.full-con-title{
+	font-size: 36px;
+	text-align: center;
+	text-align: center;
+}
+.full-con-title a{
+	text-decoration: none;
 }
 
 /*site-content style from here*/
+.site-content{
+	margin:0;
+	width: 100%;
+	float: left;
+	height: auto;
+}
+
+.content-area{
+	width: 1080px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.home .content-area{
+	background: #fff none repeat scroll 0 0;
+	box-shadow: 0 0 3px rgba(1, 1, 1, 0.16);
+	color: #111111;
+	font-size: 14px;
+	height: auto;
+	margin: 30px auto;
+	padding: 30px;
+	width: 1080px;
+}
+.entry-content{
+	width: 98%;
+
+}
+.entry-content p{
+	margin-top: 0px;
+}
+
+
+.site-main{
+	width: 70%;
+	height: auto;
+	float: left;
+	margin-top: 30px;
+}
+
+#secondary, .widget-area{
+	width: 30%;
+	height: auto;
+	float: right;
+	margin-top: 30px;
+}
+
+
+/** Footer style start from here **/
+.site-footer{
+	background: #2a2a2c none repeat scroll 0 0;
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+
+}
+
+.footer-content{
+	color: #efefef;
+	height: auto;
+	margin: 40px auto;
+	width: 1080px;
+}
+
+.footer-content a{
+	color: #ffffff;
+}
+
+.footer-content .site-info{
+	width: 100%;
+	float: left;
+	font-size: 13px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.footer-nav{
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.footer-nav ul{
+
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.footer-nav ul li{
+	display: inline;
+	margin: 10px;
+}
+.footer-nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.footer-nav ul li a:hover{
+	text-decoration: underline;
+}
+
+/*weight design*/
+
+
+.error-area-content {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.error-sidebar{
+	width: 30%;
+	height: auto;
+	float: left;
+}
+/*Blog style*/
+.blog-cat-main-area{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #fff none repeat scroll 0 0;
+	box-shadow: 0 0 3px rgba(1, 1, 1, 0.16);
+	color: #111111;
+	font-size: 14px;
+	margin-bottom: 30px;
+	padding: 10px;
+}
+.cat-blog-thumb{
+	width: 50%;
+	height: auto;
+	float: left;
+	padding: 15px;
+}
+
+.cat-blog-thumb img{
+	height: auto;
+	max-height: 220px;
+	min-height: 220px;
+	width: 100%;
+}
+
+.cat-blog-main{
+	width: 50%;
+	height: auto;
+	float: left;
+	padding: 10px;
+}
+.cat-blog-title{
+	float: left;
+	font-size: 15px;
+	margin-bottom: 0;
+	margin-top: 0;
+	width: 100%;
+}
+.cat-blog-title a{
+	text-decoration: none;
+}
+.read-more{
+	float: right;
+	font-size: 14px;
+	text-align: right;
+	width: 100%;
+}
+.cat-blog-content{
+	width: 100%;
+	float: left;
+
+}

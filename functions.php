@@ -45,6 +45,7 @@ function bb_niche_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'bb-niche' ),
+		'footer' => esc_html__( 'footer', 'bb-niche' ),
 	) );
 
 	/*
@@ -138,3 +139,37 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+function my_breadcrumb($theme_location = 'main', $separator = ' &gt; ') {
+
+	$items = wp_get_nav_menu_items($theme_location);
+	_wp_menu_item_classes_by_context( $items ); // Set up the class variables, including current-classes
+	$crumbs = array();
+
+	foreach($items as $item) {
+		if ($item->current_item_ancestor || $item->current) {
+			$crumbs[] = "<a href=\"{$item->url}\" title=\"{$item->title}\">{$item->title}</a>";
+		}
+	}
+	echo implode($separator, $crumbs);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
