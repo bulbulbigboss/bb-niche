@@ -17,7 +17,7 @@ function bb_niche_customize_register( $wp_customize ) {
 	$wp_customize->add_section( 'themeslug_logo_section' , array(
 		'title'       => __( 'Logo', 'themeslug' ),
 		'priority'    => 30,
-		'description' => 'Upload a logo to replace the default site name and description in the header',
+		'description' => 'Upload a Logo here logo size should be 350px / 50px',
 	) );
 	$wp_customize->add_setting( 'themeslug_logo' );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_logo', array(
