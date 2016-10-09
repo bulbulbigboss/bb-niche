@@ -14,12 +14,17 @@
 
 get_header(); ?>
 
+	<div class="home-page-banner">
+		<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+
+
+	</div>
+
+
+<div class="home-page-main-content-area">
+
 	<div id="primary" class="content-area">
-		<div class="home-banner">
-			<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
 
-
-		</div>
 
 
 
@@ -40,6 +45,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+</div><!-- end home page content area here -->
 
 <?php
 get_footer();

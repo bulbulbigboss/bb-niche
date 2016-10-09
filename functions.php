@@ -22,7 +22,7 @@ function bb_niche_setup() {
 	 * If you're building a theme based on BB Niche, use a find and replace
 	 * to change 'bb-niche' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'bb-niche', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'bb-niche',  get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -145,17 +145,6 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
-
-
-
-
-
-
-
-
-
-
-
 // Breadcrumbs
 function custom_breadcrumbs() {
 
@@ -183,7 +172,7 @@ function custom_breadcrumbs() {
 
 		if ( is_archive() && !is_tax() && !is_category() && !is_tag() ) {
 
-			echo '<li class="item-current item-archive"><strong class="bread-current bread-archive">' . post_type_archive_title($prefix, false) . '</strong></li>';
+			echo '<li class="item-current item-archive"><strong class="bread-current bread-archive">' . post_type_archive_title($prefix , false) . '</strong></li>';
 
 		} else if ( is_archive() && is_tax() && !is_category() && !is_tag() ) {
 

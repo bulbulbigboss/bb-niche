@@ -1002,16 +1002,22 @@ object {
 	color: #111111;
 	font-size: 14px;
 	height: auto;
-	margin: 30px auto;
+	margin: 10px auto;
 	padding: 30px;
 	width: 1080px;
 }
+
+.home-page-main{
+	margin-top: -30px;
+}
+
+
+
 .entry-content{
 	width: 98%;
 
 }
 .entry-content p{
-	margin-top: 0px;
 }
 
 
@@ -1020,6 +1026,12 @@ object {
 	height: auto;
 	margin-top: 10px;
 	width: 73%;
+
+	background: #fff none repeat scroll 0 0;
+	box-shadow: 0 0 3px rgba(1, 1, 1, 0.16);
+	color: #111111;
+	font-size: 14px;
+	padding: 10px;
 }
 
 #secondary, .widget-area{
@@ -1154,12 +1166,7 @@ object {
 	width: 100%;
 	height: auto;
 	float: left;
-
-
-
-
-
-	 }
+}
 
 .header-bottom-content{
 	width: 1080px;
@@ -1191,3 +1198,31 @@ object {
 	font-weight:100;
 	color:#ccc;
 }
+
+.home-page-banner{
+	float: left;
+	height: auto;
+	margin: 20px 0 10px;
+	width: 100%;
+
+
+	background: #fff none repeat scroll 0 0;
+	box-shadow: 0 1px 4px #dfdddd;
+	transition: all 0s ease 0s, all 0.2s ease 0s, all 0s linear 0s;
+	z-index: 101;
+
+}
+
+.home-page-banner img{
+	width: 100%;
+	height: auto;
+	background-size: cover;
+}
+
+.home-page-main-content-area{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+
