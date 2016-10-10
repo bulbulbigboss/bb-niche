@@ -88,7 +88,7 @@ add_action( 'after_setup_theme', 'bb_niche_content_width', 0 );
  */
 function bb_niche_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'bb-niche' ),
+		'name'          => esc_html__( 'Main Sidebar', 'bb-niche' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'bb-niche' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -376,8 +376,7 @@ function custom_breadcrumbs() {
 
 }
 
-
-?>
+include_once('widget.php');
 
 
 

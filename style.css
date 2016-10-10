@@ -1225,4 +1225,30 @@ object {
 	float: left;
 }
 
+/*custom widget design */
+
+.bb-widget-recent-post-thumb{
+	float: left;
+	margin-top: 7px;
+	width: 20%;
+}
+.bb_recent-widget_title{
+	width: 75%;
+	float: right;
+}
+
+.bb_recent-widget_title a{
+	text-decoration: none;
+	text-align: justify;
+
+}
+
+
+.bb-recent-post-widget-area{
+	width: 100%;
+	height:auto ;
+	float: left;
+	padding-bottom: 10px;
+
+}
 
