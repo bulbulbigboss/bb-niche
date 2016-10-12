@@ -24,9 +24,21 @@
 
 
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bb-niche' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'bb-niche' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php $authorbb ="" ; printf( esc_html__( 'Theme: %1$s by %2$s.', 'bb-niche' ), 'bb-niche', '<a href="" rel="designer">bulbul bigboss</a>' ); ?>
+
+			<?php if( get_theme_mod( 'footer_text_block') != "" ): ?>
+
+				<?php echo get_theme_mod( 'footer_text_block'); ?>
+
+
+			<?php else : ?>
+
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bb-niche' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'bb-niche' ), 'WordPress' ); ?></a>
+				<span class="sep"> | </span>
+				<?php $authorbb ="" ; printf( esc_html__( 'Theme: %1$s by %2$s.', 'bb-niche' ), 'bb-niche', '<a href="" rel="designer">bulbul bigboss</a>' ); ?>
+			<?php endif ?>
+
+
+
 		</div><!-- .site-info -->
 
 
