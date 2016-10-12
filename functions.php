@@ -96,6 +96,29 @@ function bb_niche_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Home page sidebar one ', 'bb-niche' ),
+		'id'            => 'home-sidebar-1',
+		'description'   => esc_html__( 'Sidebar after home page content area. ', 'bb-niche' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Home page sidebar Two ', 'bb-niche' ),
+		'id'            => 'homepage-side-2',
+		'description'   => esc_html__( 'Sidebar after home page content area. ', 'bb-niche' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
 }
 add_action( 'widgets_init', 'bb_niche_widgets_init' );
 
@@ -141,7 +164,7 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 function new_excerpt_more( $more ) {
-	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'bb-niche') . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
@@ -354,10 +377,10 @@ function custom_breadcrumbs() {
 			// Display author name
 			echo '<li class="item-current item-current-' . $userdata->user_nicename . '"><strong class="bread-current bread-current-' . $userdata->user_nicename . '" title="' . $userdata->display_name . '">' . 'Author: ' . $userdata->display_name . '</strong></li>';
 
-		} else if ( get_query_var('paged') ) {
+		} else if ( get_query_var('paged','bb-niche') ) {
 
 			// Paginated archives
-			echo '<li class="item-current item-current-' . get_query_var('paged') . '"><strong class="bread-current bread-current-' . get_query_var('paged') . '" title="Page ' . get_query_var('paged') . '">'.__('Page') . ' ' . get_query_var('paged') . '</strong></li>';
+			echo '<li class="item-current item-current-' . get_query_var('paged','bb-niche') . '"><strong class="bread-current bread-current-' . get_query_var('paged','bb-niche') . '" title="Page ' . get_query_var('paged','bb-niche') . '">'.__('Page','bb-niche') . ' ' . get_query_var('paged','bb-niche') . '</strong></li>';
 
 		} else if ( is_search() ) {
 
@@ -376,9 +399,9 @@ function custom_breadcrumbs() {
 
 }
 
-include_once('widget.php');
+get_template_part('widget');
 
-
+add_editor_style();
 
 
 

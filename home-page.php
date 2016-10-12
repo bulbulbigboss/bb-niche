@@ -44,7 +44,40 @@ get_header(); ?>
 			?>
 
 		</main><!-- #main -->
+
+
+
+
+
 	</div><!-- #primary -->
+
+	<div class="home-sidebar-area">
+			<div class="home-sidebar-content-area">
+
+				<div class="widget-home-box-one">
+
+
+
+					<?php dynamic_sidebar('home-sidebar-1');?>
+
+				</div>
+
+				<div class="widget-home-box-two">
+
+
+
+					<?php  dynamic_sidebar('homepage-side-2');?>
+
+				</div>
+
+
+
+
+
+
+			</div>
+
+	</div><!-- home page sidebar area end -->
 
 </div><!-- end home page content area here -->
 

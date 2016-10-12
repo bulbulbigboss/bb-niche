@@ -15,24 +15,24 @@ class recentpostwidget extends WP_Widget{
 
             public function widget($args, $instance){
 
+                $title = $instance['title'];
+                $bbpostnum = $instance['bbpostnum'];
+
                 echo $args['before_widget'] ;
+                    echo $args['before_title'];
+                        echo $title ;
+                    echo $args['after_title'];
 
-            $title = $instance['title'];
 
-
-            echo $args['before_title'];
-            echo $title ;
-            echo $args['after_title'];
 
 
 
                 $args = array(
-                    'numberposts' => 10,
+                    'numberposts' =>1 ,
                     'offset' => 0,
                     'category' => 0,
                     'orderby' => 'post_date',
                     'order' => 'DESC',
-                    'include' => '',
                     'exclude' => '',
                     'meta_key' => '',
                     'meta_value' =>'',
@@ -41,14 +41,22 @@ class recentpostwidget extends WP_Widget{
                     'suppress_filters' => true
                 );
 
+               $postnn = $args['numberposts'] = $bbpostnum  ;
+
                 $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
+
+                echo  $postnn ;
 
 
                 ?>
 
+
+
                     <?php
+
+
                     $recent_posts = wp_get_recent_posts();
-                    foreach( $recent_posts as $recent ){ ?>
+                    foreach( $recent_posts as $recent  ){ ?>
 
                         <div class="bb-recent-post-widget-area">
 
@@ -87,7 +95,7 @@ class recentpostwidget extends WP_Widget{
 
                 <p>
                     <label for="<?php echo $this->get_field_id('bbpostnum'); ?>">Number of post</label>
-                    <input class="widefat" type="text" name="<?php echo $this->get_field_name('bbpostnum'); ?>"
+                    <input class="widefat" type="number" name="<?php echo $this->get_field_name('bbpostnum'); ?>"
                            id="<?php echo $this->get_field_id('bbpostnum'); ?>" value="<?php echo $bbpostnum ;?>"/>
                 </p>
 

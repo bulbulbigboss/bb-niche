@@ -1251,4 +1251,37 @@ object {
 	padding-bottom: 10px;
 
 }
+/** Home page sidebar after content **/
+
+.home-sidebar-area{
+	width: 100%;
+	height: auto;
+	float:left;
+}
+
+
+.home-sidebar-content-area{
+	width: 1080px;
+	height: auto;
+	margin: 10px auto;
+    }
+.widget-home-box-one{
+	width: 49%;
+	height: auto;
+	float: left;
+
+
+   }
+
+.home-sidebar-content-area .widget{
+	width: 100%;
+}
+
+.widget-home-box-two{
+	width: 49%;
+	height: auto;
+	float: right;
+
+   }
+
 

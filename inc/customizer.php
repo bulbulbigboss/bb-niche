@@ -14,16 +14,17 @@ function bb_niche_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-	$wp_customize->add_section( 'themeslug_logo_section' , array(
-		'title'       => __( 'Logo', 'themeslug' ),
+	$wp_customize->add_section( 'bb-niche_logo_section' , array(
+		'title'       => __( 'Logo', 'bb-niche' ),
 		'priority'    => 30,
 		'description' => 'Upload a Logo here logo size should be 350px / 50px',
 	) );
-	$wp_customize->add_setting( 'themeslug_logo' );
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'themeslug_logo', array(
-		'label'    => __( 'Logo', 'themeslug' ),
-		'section'  => 'themeslug_logo_section',
-		'settings' => 'themeslug_logo',
+
+	$wp_customize->add_setting( 'bb-niche_logo', wp_parse_args( $setting, $default_setting_args ),array('sanitize_callback' => '__return_false',)  );
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'bb-niche_logo', array(
+		'label'    => __( 'Logo', 'bb-niche' ),
+		'section'  => 'bb-niche_logo_section',
+		'settings' => 'bb-niche_logo',
 	) ) );
 
 }
