@@ -45,7 +45,7 @@ class recentpostwidget extends WP_Widget{
 
                 $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
 
-                echo  $postnn ;
+
 
 
                 ?>
