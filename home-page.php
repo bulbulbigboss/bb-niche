@@ -16,7 +16,10 @@ get_header(); ?>
 
 	<div class="home-page-banner">
 		<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-
+		<div class="welcome-area">
+			<h2>Welcome to bb Niche theme pro</h2>
+			<p>A free niche bloging theme with premium option with Responsive Layout. </p>
+		</div>
 
 	</div>
 

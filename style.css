@@ -1281,7 +1281,24 @@ object {
 	width: 49%;
 	height: auto;
 	float: right;
+}
+.welcome-area{
+	background: #000 none repeat scroll 0 0;
+	color: #fff;
+	margin-top: -95px;
+	opacity: 0.7;
+	padding: 15px;
+	position: relative;
+	text-align: center;
+	z-index: 0;
+}
 
-   }
+.welcome-area p{
+	margin: 0;
+}
+
+.welcome-area h2{
+	margin: 0;
+}
 
 

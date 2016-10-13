@@ -178,6 +178,9 @@
         width: 100%;
         background: #21759b;
     }
+    .welcome-area{
+        display: none;
+    }
 
 
 /*End screen */
@@ -265,6 +268,10 @@
     .main-navigation li:hover{
         width: 100%;
         background: #21759b;
+    }
+
+    .welcome-area{
+        display: none;
     }
 
 
