@@ -25,7 +25,7 @@ function bb_niche_custom_header_setup() {
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
-		'height'                 => 250,
+		'height'                 => 300,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'bb_niche_header_style',
 	) ) );
