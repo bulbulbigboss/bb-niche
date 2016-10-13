@@ -1,3 +1,281 @@
 /*
 ***** Responsive CSS for BB niche theme ***
 */
+
+
+
+/* Default Layout: 1080px.  */
+
+@media only screen and (min-width: 992px) and (max-width: 1079px) {
+
+    .header-content{
+        width: 960px;
+    }
+    .home-page-banner{
+        width: 100%;
+    }
+    .home .content-area{
+        width: 960px;
+    }
+    .home-sidebar-content-area{
+        width: 960px;
+    }
+
+    .header-bottom-content{
+        width: 960px;
+    }
+    .content-area{
+        width: 960px;
+    }
+
+    .site-main{
+        width: 70%;
+    }
+
+    .footer-content{
+        width: 960px;
+    }
+
+    .widget {
+        background: #fff none repeat scroll 0 0;
+        box-shadow: 0 0 3px rgba(1, 1, 1, 0.16);
+        color: #111111;
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 81%;
+    }
+/*end sreen here */
+
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .header-content{
+        width: 700px;
+    }
+    .home-page-banner{
+        width: 100%;
+    }
+    .home .content-area{
+        width: 700px;
+    }
+    .home-sidebar-content-area{
+        width: 700px;
+    }
+
+    .header-bottom-content{
+        width: 700px;
+    }
+    .content-area{
+        width: 700px;
+    }
+
+    .site-main{
+        width: 70%;
+    }
+
+    .footer-content{
+        width: 700px;
+    }
+
+    .widget {
+        background: #fff none repeat scroll 0 0;
+        box-shadow: 0 0 3px rgba(1, 1, 1, 0.16);
+        color: #111111;
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 81%;
+    }
+
+}
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+
+    .header-content{
+        width: 300px;
+    }
+    .home-page-banner{
+        width: 100%;
+    }
+    .home .content-area{
+        width:300px;
+    }
+    .home-sidebar-content-area{
+        width: 300px;
+    }
+
+    .header-bottom-content{
+        width: 300px;
+    }
+    .content-area{
+        width: 300px;
+    }
+    .widget-home-box-one{
+        width: 100%;
+    }
+
+
+
+    .widget-home-box-two{
+        width: 100%;
+    }
+    .footer-content{
+        width: 100%;
+    }
+
+.site-branding{
+    width: 100%;
+}
+.site-logo{
+    margin: 5px;
+}
+
+    .menu-toggle{
+        float: left;
+        margin-left: -30px;
+        text-align: center;
+    }
+
+    .site-main{
+        width: 100%;
+    }
+    #secondary, .widget-area{
+        width: 100%;
+    }
+    .widget {
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 93%;
+    }
+    .cat-blog-thumb{
+        width: 100%;
+    }
+    .cat-blog-thumb img{
+        height: auto;
+        min-height: 30px;
+        width: 100%;
+    }
+    .cat-blog-main{
+        width: 100%;
+    }
+
+    .entry-title {
+        font-size: 20px;
+    }
+    .main-navigation li{
+        width: 100%;
+    }
+
+    .main-navigation li:hover{
+        width: 100%;
+        background: #21759b;
+    }
+
+
+/*End screen */
+}
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+    .header-content{
+        width: 400px;
+    }
+    .home-page-banner{
+        width: 100%;
+    }
+    .home .content-area{
+        width:400px;
+    }
+    .home-sidebar-content-area{
+        width: 400px;
+    }
+
+    .header-bottom-content{
+        width: 400px;
+    }
+    .content-area{
+        width: 400px;
+    }
+    .widget-home-box-one{
+        width: 100%;
+    }
+
+
+    .widget-home-box-two{
+        width: 100%;
+    }
+
+    .footer-content{
+        width: 100%;
+    }
+
+    .menu-toggle{
+        float: left;
+        margin-left: -30px;
+        text-align: center;
+    }
+
+    .site-main{
+        width: 100%;
+    }
+
+    .widget {
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 93%;
+    }
+
+    .cat-blog-thumb{
+        width: 100%;
+    }
+    .cat-blog-thumb img{
+        height: auto;
+        min-height: 30px;
+        width: 100%;
+    }
+    .cat-blog-main{
+        width: 100%;
+    }
+
+    .entry-title {
+        font-size: 20px;
+    }
+
+    #secondary, .widget-area{
+        width: 100%;
+    }
+
+    .main-navigation li{
+        width: 100%;
+    }
+
+    .main-navigation li:hover{
+        width: 100%;
+        background: #21759b;
+    }
+
+
+    /*End screen */
+
+
+}
+
+
+/*@media screen and (max-width: 320px) {
+
+
+}
+@media screen and (max-width: 240px) {}*/
