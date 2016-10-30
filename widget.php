@@ -112,13 +112,90 @@ class recentpostwidget extends WP_Widget{
 
 
 }//end
+// html widget
 
+class htmlwidget extends WP_Widget{
+
+    public function __construct(){
+
+        parent::__construct('htmlwidget','BB niche About Me widget ',array(
+
+            'description' => 'BB Niche About Me widget '
+
+        ));
+		}
+
+    public function widget($args, $instance){
+
+        $bbtitle = $instance['title'];
+        $htmlcode = $instance['htmlcode'];
+        $titalign = $instance['titalign'];
+        echo $args['before_widget'] ;
+        ?>
+
+        <style >
+            .centertext{
+                text-align: center;
+            }
+
+        </style>
+
+      
+
+            <div class="centertext"><?php echo $args['before_title'] . $bbtitle . $args['after_title'] ;?></div>
+
+       
+
+       
+
+
+        <p><?php echo $htmlcode ;?></p>
+
+        <?php
+        echo $args['after_widget'];
+    }
+
+    public  function  form($instance){
+
+
+
+            $bbtitle = $instance['title'];
+            $htmlcode = $instance['htmlcode'];
+            $titalign = $instance['titalign'];
+
+            ?>
+
+
+            <p>
+                <label for="<?php echo $this->get_field_id('title'); ?>">Widget Title here</label>
+                <input class="widefat" type="text" name="<?php echo $this->get_field_name('title'); ?>"
+                       id="<?php echo $this->get_field_id('title'); ?>" value="<?php echo $bbtitle ;?>"/>
+            </p>
+
+
+
+         
+            <p>
+                <label for="<?php echo $this->get_field_id('htmlcode'); ?>">Details description here</label>
+
+                <textarea id="<?php echo $this->get_field_id('htmlcode'); ?>" class="widefat" name="<?php echo $this->get_field_name('htmlcode'); ?>">
+                    <?php echo $htmlcode ;?>
+                </textarea>
+
+            </p>
+        <?php
+
+    }
+
+
+}//end class here
 
 //widget register
 
         function bb_niche_widget_register(){
 
             register_widget('recentpostwidget');
+            register_widget('htmlwidget');
 
         }
 
